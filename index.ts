@@ -8,7 +8,7 @@ const deployment = new k8s.apps.v1.Deployment("test-nginx", {
         replicas: 1,
         template: {
             metadata: { labels: appLabels },
-            spec: { containers: [{ name: "nginx", image: "nginx:1.22", imagePullPolicy: "IfNotPresent" }] }
+            spec: { containers: [{ name: "nginx", image: "nginx:1.23", imagePullPolicy: "IfNotPresent" }] }
         }
     }
 });
